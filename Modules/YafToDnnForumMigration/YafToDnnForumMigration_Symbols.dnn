@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dotnetnuke type="Package" version="6.0">
+  <packages>
+    <package name="Upendo.Modules.YafToDnnForumMigration_Symbols" type="Library" version="01.00.00">
+      <friendlyName>YafToDnnForumMigration Module Symbols</friendlyName>
+      <description><![CDATA[A Module for migrate YAF Forum into DNN Community Forums]]></description>
+      <owner>
+        <name>erwin yulianto</name>
+        <organization>Upendo</organization>
+        <url>upendoventures.com</url>
+        <email>erw13n@gmail.com</email>
+      </owner>
+      <license src="License.txt" />
+      <releaseNotes src="ReleaseNotes.txt" />
+      <azureCompatible>True</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.0.0">Upendo.Modules.YafToDnnForumMigration</dependency>
+      </dependencies>
+
+      <components>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath></basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

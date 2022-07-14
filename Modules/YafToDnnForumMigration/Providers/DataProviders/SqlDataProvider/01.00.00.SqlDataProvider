@@ -1,0 +1,36 @@
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}upendo_ForumMigration_GetDNNUserID]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}upendo_ForumMigration_GetDNNUserID]
+GO
+
+
+
+CREATE PROCEDURE  {databaseOwner}{objectQualifier}upendo_ForumMigration_GetDNNUserID
+AS
+	SELECT yu.[ProviderUserKey]
+	        ,yu.UserID as YafUserID
+	        ,u.UserID as DnnUserID
+		    ,u.DisplayName
+		    ,u.UserName
+    FROM {databaseOwner}{objectQualifier}[yaf_User] yu
+    inner join {databaseOwner}{objectQualifier}[aspnet_Membership] am on yu.ProviderUserKey = am.UserId
+    inner join {databaseOwner}{objectQualifier}[aspnet_Users] au on au.UserId = am.UserId
+    inner join {databaseOwner}{objectQualifier}[users] u on u.Username = au.UserName
+GO
+
+
+
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}upendo_ForumMigration_GetForumTopic]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}upendo_ForumMigration_GetForumTopic]
+GO
+
+
+
+CREATE PROCEDURE  {databaseOwner}{objectQualifier}upendo_ForumMigration_GetForumTopic(@ForumId int)
+AS
+	SELECT ft.ForumId, ft.TopicId, t.ContentId, c.Subject
+	FROM [activeforums_ForumTopics] ft
+	INNER JOIN activeforums_Topics t ON t.TopicId = ft.TopicId
+	INNER JOIN activeforums_Content c ON c.ContentId = t.ContentId
+	WHERE ForumId = @ForumId
+GO
