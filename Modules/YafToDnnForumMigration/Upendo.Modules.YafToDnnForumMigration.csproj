@@ -57,7 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="DotNetNuke.Modules.ActiveForums">
-      <HintPath>..\..\website\bin\DotNetNuke.Modules.ActiveForums.dll</HintPath>
+      <HintPath>..\..\References\DnnCommunityForum\DotNetNuke.Modules.ActiveForums.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -75,28 +75,28 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
     <Reference Include="YAF">
-      <HintPath>..\..\website\bin\YAF.dll</HintPath>
+      <HintPath>..\..\References\YAFNET-DnnForum\YAF.dll</HintPath>
     </Reference>
     <Reference Include="YAF.Configuration">
-      <HintPath>..\..\website\bin\YAF.Configuration.dll</HintPath>
+      <HintPath>..\..\References\YAFNET-DnnForum\YAF.Configuration.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="YAF.Core">
-      <HintPath>..\..\website\bin\YAF.Core.dll</HintPath>
+      <HintPath>..\..\References\YAFNET-DnnForum\YAF.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="YAF.Data.MsSql">
-      <HintPath>..\..\website\bin\YAF.Data.MsSql.dll</HintPath>
+      <HintPath>..\..\References\YAFNET-DnnForum\YAF.Data.MsSql.dll</HintPath>
     </Reference>
     <Reference Include="YAF.DotNetNuke.Module">
-      <HintPath>..\..\website\bin\YAF.DotNetNuke.Module.dll</HintPath>
+      <HintPath>..\..\References\YAFNET-DnnForum\YAF.DotNetNuke.Module.dll</HintPath>
     </Reference>
     <Reference Include="YAF.Types">
-      <HintPath>..\..\website\bin\YAF.Types.dll</HintPath>
+      <HintPath>..\..\References\YAFNET-DnnForum\YAF.Types.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="YAF.Web">
-      <HintPath>..\..\website\bin\YAF.Web.dll</HintPath>
+      <HintPath>..\..\References\YAFNET-DnnForum\YAF.Web.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -159,6 +159,7 @@
     <Content Include="App_LocalResources\View.ascx.resx">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="ImportProgress.ashx" />
     <Content Include="Images\logo.png" />
     <Content Include="License.txt" />
     <Content Include="YafToDnnForumMigration.dnn">
