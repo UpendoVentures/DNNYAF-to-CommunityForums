@@ -83,12 +83,12 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     </CreateItem>
 
     <ItemGroup>
-      <BinInstallInclude Include="$(MSBuildProjectDirectory)\bin\*.dll" Exclude="$(MSBuildProjectDirectory)\bin\DotNetNuke*;$(MSBuildProjectDirectory)\bin\Dnn*;$(MSBuildProjectDirectory)\bin\Telerik*;$(MSBuildProjectDirectory)\bin\System.*;$(MSBuildProjectDirectory)\bin\Microsoft.*;$(MSBuildProjectDirectory)\bin\Newtonsoft.Json.*" />
+      <BinInstallInclude Include="$(MSBuildProjectDirectory)\bin\*.dll" Exclude="$(MSBuildProjectDirectory)\bin\DotNetNuke*;$(MSBuildProjectDirectory)\bin\Dnn*;$(MSBuildProjectDirectory)\bin\Telerik*;$(MSBuildProjectDirectory)\bin\System.*;$(MSBuildProjectDirectory)\bin\Microsoft.*;$(MSBuildProjectDirectory)\bin\Newtonsoft.Json.*;$(MSBuildProjectDirectory)\bin\YAF.*;$(MSBuildProjectDirectory)\bin\ServiceStack.*" />
     </ItemGroup>
 
     <ItemGroup>
-      <SymbolsBinInclude Include="$(MSBuildProjectDirectory)\bin\*.pdb" Exclude="$(MSBuildProjectDirectory)\bin\DotNetNuke*;$(MSBuildProjectDirectory)\bin\Dnn*;$(MSBuildProjectDirectory)\bin\Telerik*;$(MSBuildProjectDirectory)\bin\System.*;$(MSBuildProjectDirectory)\bin\Microsoft.*;$(MSBuildProjectDirectory)\bin\Newtonsoft.Json.*" />
-      <SymbolsBinInclude Include="$(MSBuildProjectDirectory)\bin\*.xml" Exclude="$(MSBuildProjectDirectory)\bin\DotNetNuke*;$(MSBuildProjectDirectory)\bin\Dnn*;$(MSBuildProjectDirectory)\bin\Telerik*;$(MSBuildProjectDirectory)\bin\System.*;$(MSBuildProjectDirectory)\bin\Microsoft.*;$(MSBuildProjectDirectory)\bin\Newtonsoft.Json.*" />
+      <SymbolsBinInclude Include="$(MSBuildProjectDirectory)\bin\*.pdb" Exclude="$(MSBuildProjectDirectory)\bin\DotNetNuke*;$(MSBuildProjectDirectory)\bin\Dnn*;$(MSBuildProjectDirectory)\bin\Telerik*;$(MSBuildProjectDirectory)\bin\System.*;$(MSBuildProjectDirectory)\bin\Microsoft.*;$(MSBuildProjectDirectory)\bin\Newtonsoft.Json.*;$(MSBuildProjectDirectory)\bin\YAF.*;$(MSBuildProjectDirectory)\bin\ServiceStack.*" />
+      <SymbolsBinInclude Include="$(MSBuildProjectDirectory)\bin\*.xml" Exclude="$(MSBuildProjectDirectory)\bin\DotNetNuke*;$(MSBuildProjectDirectory)\bin\Dnn*;$(MSBuildProjectDirectory)\bin\Telerik*;$(MSBuildProjectDirectory)\bin\System.*;$(MSBuildProjectDirectory)\bin\Microsoft.*;$(MSBuildProjectDirectory)\bin\Newtonsoft.Json.*;$(MSBuildProjectDirectory)\bin\YAF.*;$(MSBuildProjectDirectory)\bin\ServiceStack.*" />
     </ItemGroup>
 
     <Copy SourceFiles="@(BinInstallInclude)" DestinationFolder="$(MSBuildProjectDirectory)\Package\bin"/>

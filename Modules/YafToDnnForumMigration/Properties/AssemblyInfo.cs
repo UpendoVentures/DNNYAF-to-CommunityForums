@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("YafToDnnForumMigration Modules Extension for DNN")]
 [assembly: AssemblyDescription("A Module for migrate YAF Forum into DNN Community Forums")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Upendo")]
+[assembly: AssemblyCompany("Upendo Ventures, LLC")]
 [assembly: AssemblyProduct("YafToDnnForumMigration Modules Extension for DNN")]
-[assembly: AssemblyCopyright("Copyright 2022 Upendo")]
+[assembly: AssemblyCopyright("Copyright (C) Upendo Ventures, LLC")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

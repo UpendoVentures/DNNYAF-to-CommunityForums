@@ -33,8 +33,8 @@
   </ItemGroup>
   <Target Name="CopyBin">
     <ItemGroup>
-      <BinSourceInclude Include="$(MSBuildProjectDirectory)\bin\*.dll" Exclude="$(MSBuildProjectDirectory)\bin\DotNetNuke*;$(MSBuildProjectDirectory)\bin\Telerik*;$(MSBuildProjectDirectory)\bin\System.*;$(MSBuildProjectDirectory)\bin\Microsoft.*;$(MSBuildProjectDirectory)\bin\Newtonsoft.Json.*" />
-      <BinSourceInclude Include="$(MSBuildProjectDirectory)\bin\*.pdb" Exclude="$(MSBuildProjectDirectory)\bin\DotNetNuke*;$(MSBuildProjectDirectory)\bin\Telerik*;$(MSBuildProjectDirectory)\bin\System.*;$(MSBuildProjectDirectory)\bin\Microsoft.*;$(MSBuildProjectDirectory)\bin\Newtonsoft.Json.*" />
+      <BinSourceInclude Include="$(MSBuildProjectDirectory)\bin\*.dll" Exclude="$(MSBuildProjectDirectory)\bin\DotNetNuke*;$(MSBuildProjectDirectory)\bin\Telerik*;$(MSBuildProjectDirectory)\bin\System.*;$(MSBuildProjectDirectory)\bin\Microsoft.*;$(MSBuildProjectDirectory)\bin\Newtonsoft.Json.*;$(MSBuildProjectDirectory)\bin\YAF.*;$(MSBuildProjectDirectory)\bin\ServiceStack.*" />
+      <BinSourceInclude Include="$(MSBuildProjectDirectory)\bin\*.pdb" Exclude="$(MSBuildProjectDirectory)\bin\DotNetNuke*;$(MSBuildProjectDirectory)\bin\Telerik*;$(MSBuildProjectDirectory)\bin\System.*;$(MSBuildProjectDirectory)\bin\Microsoft.*;$(MSBuildProjectDirectory)\bin\Newtonsoft.Json.*;$(MSBuildProjectDirectory)\bin\YAF.*;$(MSBuildProjectDirectory)\bin\ServiceStack.*" />
     </ItemGroup>
     <Copy SourceFiles="@(BinSourceInclude)" DestinationFolder="$(WebsitePath)\bin" />
   </Target>
