@@ -2,13 +2,13 @@
 <dotnetnuke type="Package" version="6.0">
   <packages>
     <package name="Upendo.Modules.YafToDnnForumMigration_Symbols" type="Library" version="01.00.00">
-      <friendlyName>YafToDnnForumMigration Module Symbols</friendlyName>
-      <description><![CDATA[A Module for migrate YAF Forum into DNN Community Forums]]></description>
+      <friendlyName>YAF for DNN to Community Forums Migration Symbols</friendlyName>
+      <description><![CDATA[Symbols package for YAF for DNN to Community Forums Migration]]></description>
       <owner>
-        <name>erwin yulianto</name>
-        <organization>Upendo</organization>
-        <url>upendoventures.com</url>
-        <email>erw13n@gmail.com</email>
+        <name>Will Strohl</name>
+        <organization>Upendo Ventures, LLC</organization>
+        <url><![CDATA[<a href="https://upendoventures.com/What/CMS/DNN" target="_blank">UpendoVentures.com</a>]]></url>
+        <email><![CDATA[<a href="mailto:solutions@upendoventures.com" target="_blank">solutions@upendoventures.com</a>]]></email>
       </owner>
       <license src="License.txt" />
       <releaseNotes src="ReleaseNotes.txt" />
