@@ -68,8 +68,6 @@ using System.Security;
 [assembly: WebResource("DotNetNuke.Modules.ActiveForums.CustomControls.Resources.asc.gif", "image/gif")]
 [assembly: WebResource("DotNetNuke.Modules.ActiveForums.CustomControls.Resources.desc.gif", "image/gif")]
 [assembly: WebResource("DotNetNuke.Modules.ActiveForums.CustomControls.Resources.spacer.gif", "image/gif")]
-[assembly: WebResource("DotNetNuke.Modules.ActiveForums.sql.FullTextInstallPart1.sql", "text/plain")]
-[assembly: WebResource("DotNetNuke.Modules.ActiveForums.sql.FullTextInstallPart2.sql", "text/plain")]
 
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyDelaySign(false)]

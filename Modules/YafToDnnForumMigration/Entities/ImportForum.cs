@@ -98,13 +98,13 @@ namespace Upendo.Modules.YafToDnnForumMigration.Entities
                             var forumId = Forum_Save(_activeForumModuleId, _portalId, groupId, forum);
                             if (forumId > 0)
                             {
-                                var forumTopics = data.topics.Where(x => x.ForumID == forum.ID);
+                                var forumTopics = data.topics.Where(x => x.ForumID == forum.ID && x.IsDeleted == false);
                                 foreach (var topic in forumTopics)
                                 {
                                     i++;
                                     logNum = 0.15 + ((i * 0.85) / count);//0.10 + 0.0001 * i / forumTopics.Count();
                                     log(logNum, "- " + topic.TopicName);
-                                    var topicMessages = data.messages.Where(x => x.TopicID == topic.ID);
+                                    var topicMessages = data.messages.Where(x => x.TopicID == topic.ID && x.IsDeleted == false);
                                     if (topicMessages.Count() > 0)
                                     {
                                         // Keep continue import, event if there's an error.
@@ -556,10 +556,12 @@ namespace Upendo.Modules.YafToDnnForumMigration.Entities
                     if (replyMsg.Position != 0)
                     {
                         int replyToId = 0;
-                        var replyTo = yafTopicMessages.FirstOrDefault(x => x.ID == replyMsg.ReplyTo);
-                        if (replyTo.Position != 0 || replyTo.ReplyTo.HasValue)
-                            replyToId = replyTo.ID;
-
+                        if (yafTopicMessages.Any(x=>x.ID == replyMsg.ReplyTo))
+                        {
+                            var replyTo = yafTopicMessages.FirstOrDefault(x => x.ID == replyMsg.ReplyTo);
+                            if (replyTo.Position != 0 || replyTo.ReplyTo.HasValue)
+                                replyToId = replyTo.ID;
+                        }
                         var id = Reply_Save(activeForumId, activeForumTopicId, topic, replyMsg, replyToId);
                         if (id > 0)
                             Counter.Message.Success++;

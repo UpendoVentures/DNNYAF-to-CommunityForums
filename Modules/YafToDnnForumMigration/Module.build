@@ -17,7 +17,7 @@
       <Manifest Include="*.dnn;*.dnn5;*.dnn6" Exclude="*_Symbols.dnn" />
       <TextFiles Include="*.txt" Exclude="releasenotes.txt;license.txt" />
       <SourceFiles Include="*.css;*.htm;*.html" />
-      <Views Include="*.ascx;" />
+      <Views Include="*.ascx;*.ashx" />
       <ResourceFiles Include="App_LocalResources/*.resx" />
       <Images Include="Images/**/*.*" />
       <JsFiles Include="js/**/*.*" />
