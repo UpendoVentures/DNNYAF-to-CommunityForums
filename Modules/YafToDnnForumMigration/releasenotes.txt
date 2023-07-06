@@ -1,8 +1,13 @@
+<style>
+	div.uv-install-wrapper h3, div.uv-install-wrapper h4, div.uv-install-wrapper p, div.uv-install-wrapper hr, div.uv-install-wrapper ul { margin-bottom: 0.5em; }
+	div.uv-install-wrapper ul { padding-left: 2em; }
+</style>
+<div class="uv-install-wrapper">
+	<h2>YAF for DNN to Community Forums Migration Module</h2>
+	<p>This DNN module allows site owners to delegate the ability for authorized end-users to purge the website cache at CloudFlare.</p>
 
-<h2>YafToDnnForumMigration Modules Extension for DNN</h2>
-<p>Version 01.00.00</p>
-<ul>
-	<li>First update</li>
-	<li>Second update</li>
-	<li>Another update</li>
-</ul>
+	<p>Version 01.00.00</p>
+	<ul>
+		<li>First release.</li>
+	</ul>
+</div>
