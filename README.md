@@ -1,3 +1,30 @@
+# DNN YAF Module to Community Forums Module Migration Tool  
+
+This is a module that helps you to migrate all of the forum artifacts from the popular [DNN YAF forums module](https://github.com/YAFNET/YAFNET-DNN#readme) to the [DNN Community Forums module](https://github.com/DNNCommunity/Dnn.CommunityForums#readme).  Both are a great forum module in their own right, with their own powerful feature sets.  This just helps you move from one to the other, if you find yourself needing to.  
+
+> The one known limitation this has right now is migrating the permissions from DNN YAT to the DNN Community Forums.  
+
+<hr />  
+
+## `Sponsors == (typeOf superHuman) Awesome;`  
+
+> Yes, it's not real code. It's just supposed to be fun. :P
+
+This solution is created and maintained by [Upendo Ventures](https://upendoventures.com/What/CMS/DNN) for the [DNN CMS Community](https://dnncommunity.org). Please consider [sponsoring us](https://github.com/sponsors/UpendoVentures) for this and [the many other open-source efforts we do](https://upendoventures.com/What/CMS/DNN/Extensions).  It's a lot.  :)  
+
+- [Sponsor Us](https://github.com/sponsors/UpendoVentures) (we're grateful at any level 🙏🏽)  
+
+<hr />  
+
+# Developers Only 🤓  
+
+If you're not a developer, the rest of this README is not going to interest you. 😉  
+
+
+This solution was built using the [Upendo DNN Generator](https://github.com/UpendoVentures/generator-upendodnn#readme).  
+
+<hr />
+
 **A Special Note to ALL Developers...**  
 Please do not begin any development until you first read through and understand all of the notes in the README below.  
 
